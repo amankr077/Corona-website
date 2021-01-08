@@ -1,0 +1,188 @@
+
+
+
+.display {
+	display: inherit;
+	grid-template-columns: 50% 50%;
+  gap: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+  width: 100%;
+}
+
+.HOVER {
+	--width: 100%;
+	--time: 0.7s;
+
+	position: relative;
+	display: inline-block;
+	height: 0.7em;
+	padding: 1.5em;
+
+	color: white;
+	background-image: linear-gradient(90deg , rgb(58, 58, 116) , rgb(89, 64, 110));
+	overflow: hidden;
+}
+
+.HOVER text {
+	position: relative;
+	transition: color var(--time);
+}
+
+.HOVER:hover text {
+	color: #222;
+}
+
+.HOVER span {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-radius: 100%;
+	background: #fff;
+	transform: translate(-50%, -50%);
+	transition: width var(--time), padding-top var(--time);
+}
+.HOVER:hover span {
+	width: calc(var(--width) * 2.25);
+	padding-top: calc(var(--width) * 2.25);
+}
+
+.header {
+  padding: 20px;
+  height: 100vh;
+  background: url("Coronavirus-1.jpg") no-repeat  center ;
+  background-size: cover;
+  position: relative;
+ 
+}
+.header h1 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.header .content {
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+
+body {
+  background-image: url("coronavirus-2.jpeg");
+}
+
+.flex1 {
+  display: flex;
+  color: white;
+  padding: 100px 150px 150px 100px;
+  position: center;
+   background: linear-gradient(to bottom, #16222a, #4e4376);
+   border-radius: 0 0 30% ;
+}
+
+.flex1 h1 {
+  font-size: 325%;
+  text-align: center;
+}
+.flex1 p {
+  font-weight: 400%;
+  font-family: serif;
+  font-size: 150%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+}
+
+.flex2 {
+
+  display: flex;
+  color: white;
+  padding: 100px 150px 150px 100px;
+  position: center;
+   background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  border-radius: 0 0 30% ;
+}
+
+.flex2 h1 {
+  font-size: 325%;
+  text-align: center;
+}
+.flex2 p {
+  font-weight: 400%;
+  font-family: sans-serif;
+  font-size: 150%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.flex {
+  display: flex;
+  color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+  position: center;
+}
+
+
+.flex--vertical {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.down1{
+  background-color: rgb(245, 231, 231);;
+  color: black;
+  box-shadow: 5px 6px rgba(92, 43, 148, 0.911);
+  border-radius: 2px;
+  text-align: center;
+}
+.down2{
+  background-color: rgb(245, 231, 231);
+  color: black;
+  box-shadow: 5px 7px rgba(92, 43, 148, 0.911);
+  border-radius: 2px; 
+  padding: 2px;
+}
+.down3{
+  background-color: rgb(245, 231, 231);
+  color: black;
+  box-shadow: 6px 8px rgb(92, 43, 148);
+  border-radius: 2px; 
+  text-align: center;
+}
+.down4{
+  background-color: rgb(245, 231, 231);
+  color: black;
+  box-shadow: 6px 8px rgb(92, 43, 148);
+  border-radius: 2px; 
+  padding: 2px;
+}
+.down5{
+  background-color: rgb(245, 231, 231);
+  color: black;
+  box-shadow: 5px 6px rgba(92, 43, 148, 0.911);
+  border-radius: 2px; 
+  text-align: center;
+}
+.down6{
+  background-color: rgb(245, 231, 231);
+  color: black;
+  box-shadow: 5px 6px rgb(92, 43, 148);
+  border-radius: 2px;
+  padding: 2px; 
+}
+.down1 :hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition-duration: 0.7s;
+}
+.down3 :hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition-duration: 0.7s;
+}
